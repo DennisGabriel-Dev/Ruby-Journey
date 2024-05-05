@@ -1,0 +1,1 @@
+puts ["H", "A", "L"].map {|x| x.succ }.inspect
