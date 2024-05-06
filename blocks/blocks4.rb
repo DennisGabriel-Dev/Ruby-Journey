@@ -1,4 +1,4 @@
-# Interact in two arrays
+# Interact in two arrays in the same array
 [[1, 2],[3, 4]].each {|first, second| p first, second}
 
 # ruby provides _1, _2, _3 ... these examples depends of the count of parameters
