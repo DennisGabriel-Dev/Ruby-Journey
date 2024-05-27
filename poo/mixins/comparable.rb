@@ -1,5 +1,5 @@
 class Person
-	include Comparable
+  include Comparable
 	attr_reader :name
 
 	def initialize(name)
@@ -22,9 +22,13 @@ p3 = Person.new("Larry")
 if p1 > p2
 	puts "#{p1.name}'s name > #{p2.name}'s name"
 end
-
+list = [p1, p2, p3]
 puts "Sorted list:"
-puts [p1, p2, p3].sort
+puts list.sort
+puts "=== MIN value: ==="
+puts list.min
+puts "=== MAX value: ==="
+puts list.max
 =begin
 output:
 	Matz's name > Guido's name
@@ -32,4 +36,8 @@ output:
 	Guido
 	Larry
 	Matz
+  === MIN value: ===
+  Guido
+  === MAX value: ===
+  Matz
 =end
