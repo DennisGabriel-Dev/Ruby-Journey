@@ -1,6 +1,6 @@
-require './regex6.rb'
+require_relative "regex6"
 
-puts "six o'clock".gsub(/\b/, '*') # *six* *o*'*clock*
+puts "six o'clock".gsub(/\b/, "*") # *six* *o*'*clock*
 puts "six o'clock".gsub(/\B/, "*") # s*i*x o'c*l*o*c*k
 # the \b anchor matches a word boundary(the separation between a word character)
 
