@@ -11,3 +11,4 @@ city = "Coelho Neto"
 state = "Maranhão"
 zip = "65620000"
 p method_with_keyword(city:, state:, zip: )
+p method_with_keyword(**{city: "NY", zip: "1111111", state: "CA"})
