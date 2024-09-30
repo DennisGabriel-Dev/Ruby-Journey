@@ -10,7 +10,7 @@ puts words_from_string(raw_text)
     .sort_by { |word, count| count }
     .tap{ |result| puts "tally: #{result}\n\n"}
     .last(5)
-    .tap{|result| puts "only the last five #{result}\n\n"}
+    .tap{ |result| puts "only the last five #{result}\n\n"}
     .reverse
     .tap { |result| puts "reversed: #{result}\n\n"}
-    .map {|word, count| "#{word} : #{count}"}
+    .map { | word, count | "#{word} : #{count}"}
