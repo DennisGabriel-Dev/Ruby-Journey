@@ -25,3 +25,12 @@ puts "the numbers are #{first_test} and #{second_test}" # the numbers are 1 and
 
 [1, "potato", 2, "potato"] => [Integer => first_test, String, Integer => second_test, String]
 puts "the numbers are #{first_test} and #{second_test}" # the numbers are 1 and 2
+
+
+{rank: 'Ace', suit: 'Hearts'} => {rank: , suit: }
+puts "Your card is the #{rank} of #{suit}"
+
+
+# change in for => will result an error, because the pattern does not matches it
+[1, "potato", 2, "potato"] in [Integer => first, Integer, Integer => second, String]
+puts "the first is #{first} and the second is #{second}"
