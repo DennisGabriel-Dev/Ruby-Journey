@@ -18,6 +18,7 @@ begin
   end
 rescue OpenURI::HTTPError => e
   puts "Failed to download #{file_name}: #{e}"
+  retry # retry comand, called the block again. Exercise caution when using this
 else
   puts "Else is executed only success, if code returns a raise, this clause is not executed"
 ensure
