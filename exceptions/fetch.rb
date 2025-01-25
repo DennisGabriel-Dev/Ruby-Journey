@@ -14,6 +14,8 @@ begin
       output.close
       File.delete(file_name)
       raise
+    ensure
+      puts "Finish of the search"
     end
   end
 rescue OpenURI::HTTPError => e
