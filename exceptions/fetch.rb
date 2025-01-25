@@ -14,10 +14,12 @@ begin
       output.close
       File.delete(file_name)
       raise
-    ensure
-      puts "Finish of the search"
     end
   end
 rescue OpenURI::HTTPError => e
   puts "Failed to download #{file_name}: #{e}"
+else
+  puts "Else is executed only success, if code returns a raise, this clause is not executed"
+ensure
+  puts "Finish of the search, ensure clause is executed all of times, regardless of an error or not"
 end
